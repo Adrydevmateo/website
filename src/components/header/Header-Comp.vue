@@ -11,7 +11,8 @@ const HandleChangeColorTheme = (): string =>
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="home">Home</RouterLink>
+      <RouterLink to="projects">Projects</RouterLink>
     </nav>
     <div>
       <button @click="HandleChangeColorTheme">

@@ -18,5 +18,5 @@ app.use(head)
 app.mount('#app')
 
 watch(pinia.state, (state) => {
-    localStorage["main"] = JSON.stringify(state.main)
+    localStorage['main'] = JSON.stringify(state.main)
 }, { deep: true })
