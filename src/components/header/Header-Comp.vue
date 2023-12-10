@@ -19,6 +19,10 @@ const HandleChangeColorTheme = (): string =>
         {{ mainStore.CurrentColorTheme }}
       </button>
     </div>
+    <div>
+      <button @click="mainStore.ChangeLanguage('en')">English</button>
+      <button @click="mainStore.ChangeLanguage('es')">Spanish</button>
+    </div>
   </header>
 </template>
 

@@ -1,11 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Aside from '@/components/aside/Aside-Comp.vue'
+
+const asideContent = [
+  {
+    label: { en: 'Web Development', es: 'Desarrollo Web' },
+    link: ''
+  }
+]
+</script>
 
 <template>
+  <Aside />
   <h1>Projects</h1>
-  <RouterLink :to="{ name: 'single-project', params: { project: 'TO-DO-APP' } }">Single</RouterLink>
-  <hr />
-
-  <RouterView />
 </template>
 
 <style scoped></style>
