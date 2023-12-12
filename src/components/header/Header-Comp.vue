@@ -122,7 +122,7 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
   justify-content: space-between;
   padding: 0 0 0 0.5em;
   gap: 0.5em;
-  margin: 0.3em 1em;
+  margin: 0.3em 1em 0.3em 0;
   min-width: 7em;
   background-color: transparent;
   color: var(--color-text);
