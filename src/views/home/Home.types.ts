@@ -1,5 +1,8 @@
 import type { TLanguages } from '@/Types'
 
 export type THomeTranslations = {
-    title: TLanguages
+  pageTitle: TLanguages
+  title: TLanguages
+  presentationText: TLanguages
+  aboutContentText: TLanguages
 }
