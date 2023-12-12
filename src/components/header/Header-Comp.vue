@@ -4,6 +4,8 @@ import ButtonComp from '../button/Button-Comp.vue'
 import ButtonNavigationComp from '../button/navigation/Button-Navigation-Comp.vue'
 import headerTranslations from './Header.translations'
 import { computed, ref } from 'vue'
+import IconMoon from '../../assets/icons/moon.svg'
+import IconSun from '../../assets/icons/sun.svg'
 
 const mainStore = useMainStore()
 
@@ -20,17 +22,24 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
 </script>
 
 <template>
-  <header id="header">
+  <header id="header" class="sticky">
+    <div class="header-color-theme-box">
+      <ButtonComp class="header-color-theme--btn" @click="HandleChangeColorTheme">
+        <template #default>
+          <img
+            :src="mainStore.CurrentColorTheme == 'dark-theme' ? IconSun : IconMoon"
+            :alt="`Flag icon for ${
+              headerTranslations.languageSwitcher[mainStore.CurrentLanguage].name
+            }`"
+          />
+        </template>
+      </ButtonComp>
+    </div>
     <nav class="header-navigation">
       <ButtonNavigationComp :to="link.to" v-for="(link, index) in navCollection" :key="index">
         <template #default> {{ link.name[mainStore.CurrentLanguage] }} </template>
       </ButtonNavigationComp>
     </nav>
-    <div class="header-color-theme-box">
-      <ButtonComp @click="HandleChangeColorTheme">
-        <template #default> {{ mainStore.CurrentColorTheme }} </template>
-      </ButtonComp>
-    </div>
     <div class="header-language-switch-box">
       <ButtonComp class="header-language-switch--btn" @click="CloseSelectLanguage">
         <template #default>
@@ -70,9 +79,29 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
 #header {
   display: flex;
   justify-content: space-between;
+  padding: 0.2em;
+  align-items: center;
+  color: var(--color-text);
+  background: var(--background-color);
+}
+
+#header.sticky {
+  position: fixed;
+  top: 0;
+  height: 3em;
+  width: 100%;
+}
+
+.header-color-theme--btn {
+  background-color: transparent;
+}
+
+.header-color-theme--btn > img {
+  height: 2em;
 }
 
 .header-navigation {
+  margin-left: 2em;
 }
 
 /* LANGUAGES */
@@ -93,12 +122,16 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
   justify-content: space-between;
   padding: 0 0 0 0.5em;
   gap: 0.5em;
-  margin: 0.3em;
+  margin: 0.3em 1em;
   min-width: 7em;
+  background-color: transparent;
+  color: var(--color-text);
+  padding-bottom: 0.2rem;
+  border-bottom: 0.2em solid var(--color-heading);
 }
 
 .header-language-switch--btn > img {
-  height: 1.6em;
+  height: 1.4em;
   border-top-right-radius: 0.2em;
   border-bottom-right-radius: 0.2em;
 }

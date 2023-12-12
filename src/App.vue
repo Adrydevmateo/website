@@ -9,6 +9,7 @@ const mainStore = useMainStore()
 <template>
   <div class="main-wrapper" :class="mainStore.CurrentColorTheme">
     <HeaderComp />
+    <br />
     <RouterView />
   </div>
 </template>

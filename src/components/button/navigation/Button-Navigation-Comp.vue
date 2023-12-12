@@ -12,10 +12,7 @@ defineProps({
 
 <template>
   <RouterLink :to="to">
-    <button
-      class="button-navigation button-navigation-active"
-      :class="{ 'button-navigation-inactive': $route.name !== to }"
-    >
+    <button class="button-navigation" :class="{ 'button-navigation-active': $route.name === to }">
       <slot name="default"></slot>
     </button>
   </RouterLink>
@@ -29,13 +26,12 @@ defineProps({
   border-radius: 0.2em;
   font-weight: 600;
   background-color: transparent;
+  color: var(--color-btn-inactive);
 }
 
 .button-navigation-active {
   color: var(--color-btn-active);
-}
-
-.button-navigation-inactive {
-  color: var(--color-btn-inactive);
+  padding-bottom: 0.2rem;
+  border-bottom: 0.2em solid var(--color-heading);
 }
 </style>
