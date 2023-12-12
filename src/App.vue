@@ -10,8 +10,22 @@ const mainStore = useMainStore()
   <div class="main-wrapper" :class="mainStore.CurrentColorTheme">
     <HeaderComp />
     <br />
-    <RouterView />
+    <div class="views-wrapper">
+      <RouterView />
+    </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.views-wrapper {
+  margin: 0rem 1rem;
+}
+
+@media (min-width: 1000px) {
+  .views-wrapper {
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+  }
+}
+</style>

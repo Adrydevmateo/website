@@ -75,10 +75,10 @@ const collectionOfTechnologies = [
 
 <style scoped>
 #home-view {
-  margin: 0rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 4em;
+  margin-top: 6em;
 }
 
 /* PRESENTATION */
@@ -118,6 +118,6 @@ const collectionOfTechnologies = [
 }
 
 .home-container {
-  min-height: 100vh;
+  min-height: 92vh;
 }
 </style>
