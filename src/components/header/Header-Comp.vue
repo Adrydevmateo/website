@@ -83,6 +83,7 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
   align-items: center;
   color: var(--color-text);
   background: var(--background-color);
+  z-index: 2;
 }
 
 #header.sticky {
@@ -114,6 +115,7 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   right: 0;
+  background-color: var(--background-color);
 }
 
 .header-language-switch--btn {

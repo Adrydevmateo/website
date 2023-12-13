@@ -1,18 +1,14 @@
-import type { TLang } from '@/Types'
+import type { TLang, TLanguages } from '@/Types'
 
 export type THeaderTranslations = {
   navigation: {
     home: {
       to: string
-      name: {
-        [key in TLang]: string
-      }
+      name: TLanguages
     }
     projects: {
       to: string
-      name: {
-        [key in TLang]: string
-      }
+      name: TLanguages
     }
   }
   languageSwitcher: {
