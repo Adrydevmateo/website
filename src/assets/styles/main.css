@@ -112,15 +112,6 @@ b {
   min-height: inherit;
 }
 
-.main-wrapper {
-  color: var(--color-text);
-  background: var(--background-color);
-  width: 100%;
-  width: inherit;
-  width: 100%;
-  min-height: 130vh;
-}
-
 .dark-theme {
   --color-text: var(--soft-peach-mute);
   --background-color: var(--rangoon-green);
