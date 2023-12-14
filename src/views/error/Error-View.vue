@@ -3,6 +3,7 @@ import { useMainStore } from '@/stores/main.store'
 import { useRouter } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import type { TLanguages } from '@/Types'
+import ButtonComp from '@/components/button/Button-Comp.vue'
 
 const router = useRouter()
 const mainStore = useMainStore()
@@ -22,8 +23,8 @@ const errorTranslations: TErrorTranslations = {
   },
   description(reactiveValue: string) {
     return {
-      en: `Sorry but the page { ${reactiveValue} } doesn't exist`,
-      es: `Lo siento pero la página { ${reactiveValue} } no existe`
+      en: `Sorry but the page { ${reactiveValue} } doesn't exist.`,
+      es: `Lo siento pero la página { ${reactiveValue} } no existe.`
     }
   },
   goHome: {
@@ -58,13 +59,66 @@ useHead({
 </script>
 
 <template>
-  <h1>{{ errorTranslations.title[mainStore.CurrentLanguage] }}</h1>
-  <p>{{ errorTranslations.description(currentRoutePath)[mainStore.CurrentLanguage] }}</p>
-  <button @click="GoHome">{{ errorTranslations.goHome[mainStore.CurrentLanguage] }}</button>
-  <button @click="GoToProjects">
-    {{ errorTranslations.goToProject[mainStore.CurrentLanguage] }}
-  </button>
-  <button @click="GoBack">{{ errorTranslations.goBack[mainStore.CurrentLanguage] }}</button>
+  <h1 class="home-title heading heading-1">
+    {{ errorTranslations.title[mainStore.CurrentLanguage] }}:
+    <span style="font-size: 2em">404</span>
+  </h1>
+  <p
+    class="base-font-size-text text-line-height"
+    v-html="errorTranslations.description(currentRoutePath)[mainStore.CurrentLanguage]"
+  ></p>
+
+  <ButtonComp animation-type="basic" class="error-page-navigation-btn" @click="GoHome">
+    <template #default>
+      <span>{{ errorTranslations.goHome[mainStore.CurrentLanguage] }}</span>
+      <!-- <img
+            :src="headerTranslations.languageSwitcher[mainStore.CurrentLanguage].icon"
+            :alt="`Flag icon for ${
+              headerTranslations.languageSwitcher[mainStore.CurrentLanguage].name
+            }`"
+          /> -->
+    </template>
+  </ButtonComp>
+
+  <ButtonComp animation-type="basic" class="error-page-navigation-btn" @click="GoToProjects">
+    <template #default>
+      <span>{{ errorTranslations.goToProject[mainStore.CurrentLanguage] }}</span>
+      <!-- <img
+            :src="headerTranslations.languageSwitcher[mainStore.CurrentLanguage].icon"
+            :alt="`Flag icon for ${
+              headerTranslations.languageSwitcher[mainStore.CurrentLanguage].name
+            }`"
+          /> -->
+    </template>
+  </ButtonComp>
+
+  <ButtonComp animation-type="basic" class="error-page-navigation-btn" @click="GoBack">
+    <template #default>
+      <span>{{ errorTranslations.goBack[mainStore.CurrentLanguage] }}</span>
+      <!-- <img
+            :src="headerTranslations.languageSwitcher[mainStore.CurrentLanguage].icon"
+            :alt="`Flag icon for ${
+              headerTranslations.languageSwitcher[mainStore.CurrentLanguage].name
+            }`"
+          /> -->
+    </template>
+  </ButtonComp>
 </template>
 
-<style scoped></style>
+<style scoped>
+.error-page-navigation-btn {
+  margin: 0.4em;
+  min-width: 6em;
+  color: var(--color-heading);
+  border: 0.2em solid var(--color-heading);
+  background-color: transparent;
+  border-radius: 1em;
+  text-align: center;
+  padding: 0.4em;
+}
+
+.error-page-navigation-btn:hover {
+  color: var(--background-color);
+  background-color: var(--color-heading);
+}
+</style>
