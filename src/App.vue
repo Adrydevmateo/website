@@ -17,6 +17,15 @@ const mainStore = useMainStore()
 </template>
 
 <style scoped>
+.main-wrapper {
+  color: var(--color-text);
+  background: var(--background-color);
+  width: 100%;
+  width: inherit;
+  width: 100%;
+  min-height: 200vh;
+}
+
 .views-wrapper {
   margin: 0rem 1rem;
 }
