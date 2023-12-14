@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { TAnimation } from '@/Types'
+
+defineProps<{
+  animationType?: TAnimation
+}>()
+</script>
 
 <template>
-  <button class="button">
+  <button class="button" :class="{ 'animate-basic': animationType == 'basic' }">
     <slot name="default"></slot>
   </button>
 </template>

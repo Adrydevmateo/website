@@ -21,6 +21,7 @@ export type TProjectTag =
   | 'game-development'
 
 export type TProjectTranslations = {
+  pageTitle: TLanguages
   web: TLanguages
   mobile: TLanguages
   desktop: TLanguages

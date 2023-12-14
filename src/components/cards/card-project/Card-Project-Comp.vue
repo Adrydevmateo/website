@@ -15,7 +15,10 @@ const mainStore = useMainStore()
 </script>
 
 <template>
-  <CardComp class="project" :style="{ maxWidth: maxWidth, width: width, minWidth: minWidth }">
+  <CardComp
+    class="project animate-basic"
+    :style="{ maxWidth: maxWidth, width: width, minWidth: minWidth }"
+  >
     <template #body>
       <img
         class="project-image"
@@ -27,16 +30,18 @@ const mainStore = useMainStore()
       <div class="project-footer">
         <h3 class="project-name bold">{{ project.name[mainStore.CurrentLanguage] }}</h3>
         <div class="project-footer--links">
-          <a class="link no-decoration" :href="project.repository_link">{{
+          <a class="link no-decoration animate-basic" :href="project.repository_link">{{
             CardProjectTranslation.links.code[mainStore.CurrentLanguage]
           }}</a>
-          <a class="link no-decoration" :href="project.site_link">{{
+          <a class="link no-decoration animate-basic" :href="project.site_link">{{
             CardProjectTranslation.links.site[mainStore.CurrentLanguage]
           }}</a>
         </div>
         <ol class="list-of-technologies list-style-none">
           <li v-for="(technology, index) in project.main_technologies" :key="index">
-            <a class="technology no-decoration uppercase" href="#">{{ technology }}</a>
+            <a class="technology animate-basic no-decoration uppercase" href="#">{{
+              technology
+            }}</a>
           </li>
         </ol>
       </div>
@@ -50,12 +55,6 @@ const mainStore = useMainStore()
   border-top: 0.2em solid var(--color-heading);
   border-radius: 1em;
   padding: 0.2em 0;
-  transform: var(--scale-base);
-  transition: var(--transition-base);
-}
-
-.project:hover {
-  transform: var(--scale-base-type1);
 }
 
 .project-image {
@@ -87,14 +86,11 @@ const mainStore = useMainStore()
   border-radius: 1em;
   text-align: center;
   padding: 0.2em;
-  transform: var(--scale-base);
-  transition: var(--transition-base);
 }
 
 .project-footer--links .link:hover {
   color: var(--background-color);
   background-color: var(--color-heading);
-  transform: var(--scale-base-type1);
 }
 
 .list-of-technologies {
@@ -111,11 +107,5 @@ const mainStore = useMainStore()
   text-align: center;
   padding: 0.2em;
   display: inline-block;
-  transform: var(--scale-base);
-  transition: var(--transition-base);
-}
-
-.list-of-technologies .technology:hover {
-  transform: var(--scale-base-type1);
 }
 </style>

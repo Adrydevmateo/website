@@ -173,3 +173,12 @@ b {
 .bold {
   font-weight: bold;
 }
+
+.animate-basic {
+  transform: var(--scale-base);
+  transition: var(--transition-base);
+}
+
+.animate-basic:hover {
+  transform: var(--scale-base-type1);
+}

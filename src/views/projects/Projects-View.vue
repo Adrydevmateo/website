@@ -3,9 +3,14 @@ import { ref } from 'vue'
 import type { TProject } from './Projects.types'
 import CardProjectComp from '@/components/cards/card-project/Card-Project-Comp.vue'
 import { useMainStore } from '@/stores/main.store'
-import homeTranslations from '../home/Home.translations'
+import { useHead } from '@unhead/vue'
+import { projectTranslations } from './Projects.translations'
 
 const mainStore = useMainStore()
+
+useHead({
+  title: () => projectTranslations.pageTitle[mainStore.CurrentLanguage]
+})
 
 const listOfProjects = ref<Array<TProject>>([
   {
@@ -68,7 +73,7 @@ const listOfProjects = ref<Array<TProject>>([
 <template>
   <div id="projects-view">
     <h1 class="home-title heading heading-1">
-      {{ homeTranslations.projects.title[mainStore.CurrentLanguage] }}
+      {{ projectTranslations.pageTitle[mainStore.CurrentLanguage] }}
     </h1>
     <ul class="list-of-projects list-style-none">
       <li v-for="project in listOfProjects" :key="project.id">

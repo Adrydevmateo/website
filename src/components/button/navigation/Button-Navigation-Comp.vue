@@ -1,18 +1,22 @@
 <script setup lang="ts">
+import type { TAnimation } from '@/Types'
 import { RouterLink } from 'vue-router'
 
-defineProps({
-  to: {
-    type: String,
-    required: true,
-    default: 'home'
-  }
-})
+defineProps<{
+  to: string
+  animationType?: TAnimation
+}>()
 </script>
 
 <template>
   <RouterLink :to="to">
-    <button class="button-navigation" :class="{ 'button-navigation-active': $route.name === to }">
+    <button
+      class="button-navigation"
+      :class="{
+        'button-navigation-active': $route.name === to,
+        'animate-basic': animationType == 'basic'
+      }"
+    >
       <slot name="default"></slot>
     </button>
   </RouterLink>

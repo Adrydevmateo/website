@@ -23,8 +23,13 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
 
 <template>
   <header id="header" class="sticky">
+    <!-- start color theme switch -->
     <div class="header-color-theme-box">
-      <ButtonComp class="header-color-theme--btn" @click="HandleChangeColorTheme">
+      <ButtonComp
+        animation-type="basic"
+        class="header-color-theme--btn"
+        @click="HandleChangeColorTheme"
+      >
         <template #default>
           <img
             :src="mainStore.CurrentColorTheme == 'dark-theme' ? IconSun : IconMoon"
@@ -35,13 +40,28 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
         </template>
       </ButtonComp>
     </div>
+    <!-- end color theme switch -->
+
+    <!-- start navigation -->
     <nav class="header-navigation">
-      <ButtonNavigationComp :to="link.to" v-for="(link, index) in navCollection" :key="index">
+      <ButtonNavigationComp
+        animation-type="basic"
+        :to="link.to"
+        v-for="(link, index) in navCollection"
+        :key="index"
+      >
         <template #default> {{ link.name[mainStore.CurrentLanguage] }} </template>
       </ButtonNavigationComp>
     </nav>
+    <!-- end navigation -->
+
+    <!-- start language switch -->
     <div class="header-language-switch-box">
-      <ButtonComp class="header-language-switch--btn" @click="CloseSelectLanguage">
+      <ButtonComp
+        animation-type="basic"
+        class="header-language-switch--btn"
+        @click="CloseSelectLanguage"
+      >
         <template #default>
           <span>{{ headerTranslations.languageSwitcher[mainStore.CurrentLanguage].name }}</span>
           <img
@@ -55,6 +75,7 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
 
       <div class="header-language-switch--select" v-show="isSelectLanguageActive">
         <ButtonComp
+          animation-type="basic"
           v-for="(lang, key) in headerTranslations.languageSwitcher"
           :key="key"
           class="header-language-switch--btn"
@@ -72,6 +93,7 @@ const CloseSelectLanguage = () => (selectLanguage.value = !selectLanguage.value)
         </ButtonComp>
       </div>
     </div>
+    <!-- end language switch -->
   </header>
 </template>
 
