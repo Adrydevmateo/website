@@ -1,27 +1,47 @@
-# website
+# Website v1.0.0 - Vue 3
 
-This template should help get you started developing with Vue 3 in Vite.
+**Description:** This is my official website.
 
-## Recommended IDE Setup
+**Collaboration Invitation:** If you're interested in collaborating, simply clone the project, incorporate your modifications, and submit a pull request to contribute to its evolution.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[Site](https://main--adrydev-website.netlify.app/)
 
-## Type Support for `.vue` Imports in TS
+## Table of Contents
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+1. [Versioning](#versioning)
+2. [Preview](#preview)
+3. [Contributors](#contributors)
+4. [Project Setup](#project-setup)
+   - [Install Dependencies](#install-dependencies)
+   - [Compile and Hot-Reload for Development](#compile-and-hot-reload-for-development)
+   - [Type-Check, Compile and Minify for Production](#type-check-compile-and-minify-for-production)
+   - [Run Unit Tests with Vitest](#run-unit-tests-with-vitest)
+   - [Run End-to-End Tests with Cypress](#run-end-to-end-tests-with-cypress)
+   - [Lint with ESLint](#lint-with-eslint)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Versioning
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- **v1.0.0:**
+  - Released by [AdryDev](https://github.com/Adrydevmateo)
+  - **Contribution:** Built the website.
 
-## Customize configuration
+## Preview
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- ![white theme](/public/home-w-theme.png)
+- ![dark theme](/public/home-d-theme.png)
+
+## Contributors
+
+- [AdryDev](https://github.com/Adrydevmateo)
+  - **Contribution:** Built the prototype/first version.
+- [Another Contributor](https://github.com/Adrydevmateo)
+  - **Contribution:** Added specific feature/functionality.
+- [Another Contributor](https://github.com/anotherusername)
+  - **Contribution:** Improved specific aspect and fixed bug/issue.
 
 ## Project Setup
+
+### Install Dependencies
 
 ```sh
 npm install
