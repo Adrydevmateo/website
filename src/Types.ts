@@ -1,6 +1,7 @@
 export type TLang = 'en' | 'es'
 
 export type TLanguages = {
-  en: string
-  es: string
+  [key in TLang]: string
 }
+
+export type TAnimation = 'basic'
