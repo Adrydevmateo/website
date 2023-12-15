@@ -30,18 +30,24 @@ const mainStore = useMainStore()
       <div class="project-footer">
         <h3 class="project-name bold">{{ project.name[mainStore.CurrentLanguage] }}</h3>
         <div class="project-footer--links">
-          <a class="link no-decoration animate-basic" :href="project.repository_link">{{
-            CardProjectTranslation.links.code[mainStore.CurrentLanguage]
-          }}</a>
-          <a class="link no-decoration animate-basic" :href="project.site_link">{{
+          <a
+            class="link no-decoration animate-basic"
+            :href="project.repository_link"
+            target="_blank"
+            >{{ CardProjectTranslation.links.code[mainStore.CurrentLanguage] }}</a
+          >
+          <a class="link no-decoration animate-basic" :href="project.site_link" target="_blank">{{
             CardProjectTranslation.links.site[mainStore.CurrentLanguage]
           }}</a>
         </div>
         <ol class="list-of-technologies list-style-none">
           <li v-for="(technology, index) in project.main_technologies" :key="index">
-            <a class="technology animate-basic no-decoration uppercase" href="#">{{
-              technology
-            }}</a>
+            <a
+              class="technology animate-basic no-decoration uppercase"
+              :href="technology.link"
+              target="_blank"
+              >{{ technology.name }}</a
+            >
           </li>
         </ol>
       </div>
