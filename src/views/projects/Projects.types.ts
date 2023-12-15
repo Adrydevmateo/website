@@ -37,5 +37,5 @@ export type TProject = {
   repository_link: string
   site_link: string
   documentation_link: string
-  main_technologies: Array<TTechnologyTag>
+  main_technologies: Array<{ name: TTechnologyTag; link: string }>
 }
