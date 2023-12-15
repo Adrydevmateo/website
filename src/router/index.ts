@@ -9,7 +9,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       alias: '/home',
-      component: HomeView
+      component: HomeView,
+      beforeEnter: async () => {
+        const projectsStore = useProjectsStore()
+        projectsStore.projects = projectsStore.GetProjects()
+      }
     },
     {
       path: '/projects',
