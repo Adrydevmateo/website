@@ -7,7 +7,11 @@
 .skills-component .mobile-link {}
 
 .skills-component .desktop-link {
- border: 1px solid blue;
+ border: 1px solid var(--flat-blue);
  padding: .2em;
  text-decoration: none;
+}
+
+.skills-component .desktop-link:hover {
+ border: 1px solid var(--blue-zodiac);
 }

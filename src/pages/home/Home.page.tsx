@@ -53,7 +53,7 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
    <div className='hero'>
     <img src="https://images.unsplash.com/photo-1715987587174-b8be6a743337?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width={200} height={200} />
     <div className='content'>
-     <h2>Adry Dev</h2>
+     <h1>Adry Dev</h1>
      <h3>Web Developer</h3>
      <SocialMedia />
     </div>

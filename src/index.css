@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
- --color-primary: #242424;
- --color-secondary: #ffffff;
+ --color-primary: var(--desert-storm);
+ --color-secondary: var(--blue-zodiac);
+
+ --desert-storm: #F9F7F7;
+ --link-water: #8796b1;
+ --flat-blue: #3F72AF;
+ --blue-zodiac: #112D4E;
+ --dark: #222831;
 }
 
 /* width */
@@ -46,8 +52,22 @@ body {
  margin: 0;
 }
 
+h3 {
+ color: var(--flat-blue);
+}
+
 p {
  line-height: 1.6em
+}
+
+a {
+ color: var(--flat-blue);
+ text-decoration: none;
+ transition: color .2s ease;
+}
+
+a:hover {
+ color: var(--blue-zodiac);
 }
 
 .primary-button {

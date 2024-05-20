@@ -1,0 +1,77 @@
+#contact-page {}
+
+#contact-page h2 {}
+
+#contact-page form {
+ display: grid;
+ gap: 1em;
+}
+
+#contact-page form label {
+ display: flex;
+ align-items: center;
+ gap: .2em;
+ margin-bottom: .4em;
+}
+
+#contact-page .name-box:has(input:focus) label,
+#contact-page .email-box:has(input:focus) label,
+#contact-page .message-box:has(textarea:focus) label {
+ color: var(--flat-blue);
+}
+
+#contact-page form label strong {}
+
+#contact-page form input {
+ outline: none;
+ padding: .2em .4em;
+ border-width: 1px;
+ border-style: solid;
+ border-color: transparent;
+ height: 2.4em;
+ width: 20em;
+ color: var(--blue-zodiac);
+}
+
+#contact-page form input:focus {
+ border-color: var(--flat-blue);
+}
+
+#contact-page form .message-box {}
+
+#contact-page form .message-box label {}
+
+#contact-page form .message-box textarea {
+ outline: none;
+ padding: .2em .4em;
+ width: 20em;
+ border-width: 1px;
+ border-style: solid;
+ border-color: transparent;
+ min-height: 10em;
+ color: var(--blue-zodiac);
+}
+
+#contact-page form .message-box textarea:focus {
+ border-color: var(--flat-blue);
+}
+
+#contact-page form button {
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: .1em;
+ padding: .8em .8em;
+ width: 13em;
+ color: var(--blue-zodiac);
+ border-color: var(--blue-zodiac);
+ background-color: transparent;
+}
+
+#contact-page form button:hover {
+ color: var(--flat-blue);
+ border-color: var(--flat-blue);
+ /* --flat-blue: #3F72AF;
+ --blue-zodiac: #112D4E; */
+}
