@@ -1,0 +1,13 @@
+.skills-component {
+ display: flex;
+ gap: .8em;
+ margin-bottom: 1em;
+}
+
+.skills-component .mobile-link {}
+
+.skills-component .desktop-link {
+ border: 1px solid blue;
+ padding: .2em;
+ text-decoration: none;
+}

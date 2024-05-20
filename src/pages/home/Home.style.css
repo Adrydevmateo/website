@@ -1,0 +1,83 @@
+.mobile {
+ text-align: center;
+ padding: 1em;
+}
+
+.mobile .hero {}
+
+.desktop {
+ padding: 1em 1em 0 1em;
+}
+
+.desktop .hero {
+ display: flex;
+ padding: 0 1em;
+}
+
+.desktop .hero .content {
+ padding: 0 1em;
+ display: grid;
+ place-content: end;
+}
+
+.desktop .hero .content h2 {
+ margin: 0;
+ word-spacing: -.4em;
+}
+
+.desktop .hero .content h3 {
+ word-spacing: -.4em;
+ margin-bottom: 1.8em;
+}
+
+.desktop .who-am-i {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+
+}
+
+.desktop .who-am-i .skill_contact {
+ padding: 0 1em 1em 1em;
+}
+
+.desktop .who-am-i .skill_contact .contact {
+ display: grid;
+ gap: 1em;
+}
+
+.desktop .who-am-i .skill_contact .contact a {
+ display: flex;
+ align-items: center;
+ gap: .3em;
+}
+
+.desktop .who-am-i .skill_contact .contact a strong {
+ word-break: break-all;
+ word-spacing: -.4em;
+}
+
+.desktop .who-am-i .skill_contact .skills {}
+
+.desktop .who-am-i .about {
+ padding: 0 1em 0 0;
+}
+
+.desktop .who-am-i .about p {
+ word-break: break-all;
+}
+
+.desktop .experience {}
+
+.desktop .experience h3 {
+ padding: 0 1em;
+}
+
+.desktop .experience ul {}
+
+.desktop .experience ul li {}
+
+.desktop .experience ul li h4 {
+ word-spacing: -.2em;
+}
+
+.desktop .experience ul li p {}

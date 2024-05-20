@@ -1,0 +1,6 @@
+.social-media-component {
+ display: flex;
+ align-items: center;
+ gap: .8em;
+ margin-bottom: 1em;
+}

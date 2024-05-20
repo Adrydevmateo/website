@@ -1,0 +1,10 @@
+#base-layout {
+ min-height: 90vh;
+ display: grid;
+ place-content: center;
+ padding-bottom: 2.7em;
+}
+
+#base-layout .content {
+ max-width: 90em;
+}
