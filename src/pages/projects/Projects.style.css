@@ -2,27 +2,46 @@
 
 #projects-page .hero {}
 
-#projects-page ul {}
+#projects-page ul {
+ display: flex;
+ gap: 2em;
+ list-style: none;
+ padding: 0;
+}
 
-#projects-page ul li {}
+#projects-page ul li {
+ border: 1px solid blue;
+ padding: 1em;
+}
 
 #projects-page ul li .row-1 {}
 
-#projects-page ul li .row-1 p {}
+#projects-page ul li .row-1 p {
+ margin: 0;
+}
 
 #projects-page ul li .row-2 {}
 
-#projects-page ul li .row-2 h3 {}
+#projects-page ul li .row-2 h3 {
+ word-break: break-all;
+}
 
-#projects-page ul li .row-2 p {}
+#projects-page ul li .row-2 p {
+ word-break: break-all;
+}
 
-#projects-page ul li .row-3 {}
+#projects-page ul li .row-3 {
+ margin-bottom: 1em;
+}
 
-#projects-page ul li .row-3 h4 {}
+#projects-page ul li .row-3 h4 {
+ margin-bottom: .4em;
+}
 
 #projects-page ul li .row-3 .technologies {
  display: flex;
  gap: .6em;
+ text-transform: capitalize;
 }
 
 #projects-page ul li .row-3 .technologies a {}
