@@ -5,6 +5,25 @@
 
 .mobile .hero {}
 
+.mobile button {
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: .1em;
+ padding: .8em .8em;
+ width: 13em;
+ color: var(--blue-zodiac);
+ border: 1px solid var(--link-water);
+ background-color: transparent;
+ transition: color .2s ease, border-color .2s ease;
+}
+
+.mobile button:hover {
+ color: var(--flat-blue);
+ border-color: var(--flat-blue);
+}
+
 .desktop {
  padding: 1em 1em 0 1em;
 }
