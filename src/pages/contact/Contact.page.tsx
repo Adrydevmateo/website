@@ -3,11 +3,16 @@ import './Contact.style.css'
 import BaseLayout from '@layouts/Base.layout'
 
 export default function ContactPage() {
+
+ const domain = import.meta.env.VITE_SITE_DOMAIN
+
  return (
   <BaseLayout>
    <div id="contact-page">
     <h2>Contact</h2>
-    <form>
+    <form action="https://formsubmit.co/adrydevmateo@gmail.com" method="POST">
+     <input type="hidden" name="_next" value={domain} />
+     <input type="hidden" name="_captcha" value="false" />
      <div className="name-box">
       <label htmlFor="name">
        <UserIcon />

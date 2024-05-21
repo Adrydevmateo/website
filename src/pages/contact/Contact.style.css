@@ -65,13 +65,12 @@
  padding: .8em .8em;
  width: 13em;
  color: var(--blue-zodiac);
- border-color: var(--blue-zodiac);
+ border: 1px solid var(--link-water);
  background-color: transparent;
+ transition: color .2s ease, border-color .2s ease;
 }
 
 #contact-page form button:hover {
  color: var(--flat-blue);
  border-color: var(--flat-blue);
- /* --flat-blue: #3F72AF;
- --blue-zodiac: #112D4E; */
 }

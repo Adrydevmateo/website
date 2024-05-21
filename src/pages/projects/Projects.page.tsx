@@ -24,7 +24,7 @@ export default function ProjectsPage() {
    websiteLink: ''
   },
   {
-   id: 0,
+   id: 1,
    title: 'E-commerce Website',
    description: 'Shopping',
    technologies: [{ name: 'react', link: 'https://react.dev/' }],
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
     </div>
     <ul>
      {projects.map(m => (
-      <li>
+      <li key={m.id}>
        <div className="row-1">
         <p>{m.year}</p>
        </div>
@@ -53,8 +53,8 @@ export default function ProjectsPage() {
        <div className="row-3">
         <h4>Main Technologies</h4>
         <div className="technologies">
-         {m.technologies.map(t => (
-          <a href={t.link} target='_blank'>
+         {m.technologies.map((t, i) => (
+          <a key={i} href={t.link} target='_blank'>
            <strong>{t.name}</strong>
           </a>
          ))}
