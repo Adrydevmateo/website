@@ -16,58 +16,19 @@ export default function ProjectsPage() {
  const projects: Array<TProject> = [
   {
    id: 0,
-   title: 'E-commerce Website Website',
-   description: 'Shopping',
-   technologies: [{ name: 'react', link: 'https://react.dev/' }],
+   title: 'Notes',
+   description: 'Designed to keep your ideas organized.',
+   technologies: [
+    { name: 'React', link: 'https://react.dev/' },
+    { name: 'TypeScript', link: 'https://www.typescriptlang.org/' },
+    { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+    { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' }
+   ],
    year: '2024',
-   githubLink: '',
-   websiteLink: ''
+   githubLink: 'https://github.com/Adrydevmateo/notes-app',
+   websiteLink: 'https://notes-adrydev.netlify.app/'
   },
-  {
-   id: 1,
-   title: 'E-commerce Website',
-   description: 'Shopping',
-   technologies: [{ name: 'react', link: 'https://react.dev/' }],
-   year: '2024',
-   githubLink: '',
-   websiteLink: ''
-  },
-  {
-   id: 2,
-   title: 'E-commerce Website E-commerce Website E-commerce Website',
-   description: 'Shopping',
-   technologies: [{ name: 'react', link: 'https://react.dev/' }],
-   year: '2024',
-   githubLink: '',
-   websiteLink: ''
-  },
-  {
-   id: 3,
-   title: 'E-commerce Website Website',
-   description: 'Shopping',
-   technologies: [{ name: 'react', link: 'https://react.dev/' }],
-   year: '2024',
-   githubLink: '',
-   websiteLink: ''
-  },
-  {
-   id: 4,
-   title: 'E-commerce Website',
-   description: 'Shopping',
-   technologies: [{ name: 'react', link: 'https://react.dev/' }],
-   year: '2024',
-   githubLink: '',
-   websiteLink: ''
-  },
-  {
-   id: 5,
-   title: 'E-commerce Website E-commerce Website E-commerce Website',
-   description: 'Shopping',
-   technologies: [{ name: 'react', link: 'https://react.dev/' }],
-   year: '2024',
-   githubLink: '',
-   websiteLink: ''
-  }
  ]
 
  return (
@@ -79,24 +40,26 @@ export default function ProjectsPage() {
     <ul>
      {projects.map(m => (
       <li key={m.id}>
-       <div className="row-1">
-        <p>{m.year}</p>
-       </div>
-       <div className="row-2">
-        <h3>{m.title}</h3>
-        <p>{m.description}</p>
-       </div>
-       <div className="row-3">
-        <h4>Main Technologies</h4>
-        <div className="technologies">
-         {m.technologies.map((t, i) => (
-          <a key={i} href={t.link} target='_blank'>
-           <strong>{t.name}</strong>
-          </a>
-         ))}
+       <div className='rows'>
+        <div className="row-1">
+         <p>{m.year}</p>
+        </div>
+        <div className="row-2">
+         <h3>{m.title}</h3>
+         <p>{m.description}</p>
+        </div>
+        <div className="row-3">
+         <h4>Technologies</h4>
+         <div className="technologies">
+          {m.technologies.map((t, i) => (
+           <a key={i} href={t.link} target='_blank'>
+            <strong>{t.name}</strong>
+           </a>
+          ))}
+         </div>
         </div>
        </div>
-       <div className="row-4">
+       <div className="repo-site">
         <a href={m.githubLink} target='_blank'>
          <strong>GitHub</strong>
         </a>

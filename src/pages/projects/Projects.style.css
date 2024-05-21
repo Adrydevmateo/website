@@ -14,6 +14,13 @@
  border: 1px solid var(--flat-blue);
  padding: 1em;
  width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+#projects-page ul li .rows {
+ margin-bottom: 1em;
 }
 
 #projects-page ul li .row-1 {}
@@ -43,22 +50,24 @@
 
 #projects-page ul li .row-3 .technologies {
  display: flex;
+ flex-wrap: wrap;
  gap: .6em;
- text-transform: capitalize;
 }
 
 #projects-page ul li .row-3 .technologies a {}
 
 #projects-page ul li .row-3 .technologies a strong {}
 
-#projects-page ul li .row-4 {
+#projects-page ul li .repo-site {
  display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
  gap: .6em;
 }
 
-#projects-page ul li .row-4 a {}
+#projects-page ul li .repo-site a {}
 
-#projects-page ul li .row-4 a strong {}
+#projects-page ul li .repo-site a strong {}
 
 @media screen and (min-width: 600px) {
  #projects-page {
