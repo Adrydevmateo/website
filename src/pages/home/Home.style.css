@@ -15,48 +15,55 @@
 }
 
 .desktop .hero .content {
+ width: 100%;
  padding: 0 1em;
- display: grid;
- place-content: end;
+ display: flex;
+ justify-content: space-between;
 }
 
-.desktop .hero .content h1 {
+.desktop .hero .content .i-am {
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+}
+
+.desktop .hero .content .i-am h1 {
  margin: 0;
  word-spacing: -.4em;
 }
 
-.desktop .hero .content h3 {
+.desktop .hero .content .i-am h3 {
  word-spacing: -.4em;
  margin-bottom: 1.8em;
 }
 
-.desktop .who-am-i {
- display: grid;
- grid-template-columns: repeat(2, 1fr);
-
-}
-
-.desktop .who-am-i .skill_contact {
- padding: 0 1em 1em 1em;
-}
-
-.desktop .who-am-i .skill_contact .contact {
- display: grid;
+.desktop .hero .content .contact {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
  gap: 1em;
 }
 
-.desktop .who-am-i .skill_contact .contact a {
+.desktop .hero .content .contact a {
  display: flex;
- align-items: center;
- gap: .3em;
+ align-items: start;
+ gap: .4em;
 }
 
-.desktop .who-am-i .skill_contact .contact a strong {
- word-break: break-all;
+.desktop .hero .content .contact strong {
  word-spacing: -.4em;
 }
 
-.desktop .who-am-i .skill_contact .skills {}
+.desktop .who-am-i {
+ display: grid;
+ grid-template-columns: repeat(2, 50%);
+
+}
+
+.desktop .who-am-i .skills {
+ padding: 0 1em 1em 1em;
+}
 
 .desktop .who-am-i .about {
  padding: 0 1em 0 0;

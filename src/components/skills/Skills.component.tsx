@@ -57,6 +57,33 @@ function Desktop() {
    <a className='desktop-link' href="https://react.dev/" target='_blank'>
     <strong>React</strong>
    </a>
+   <a className='desktop-link' href="https://getbootstrap.com/" target='_blank'>
+    <strong>Bootstrap</strong>
+   </a>
+   <a className='desktop-link' href="https://tailwindcss.com/" target='_blank'>
+    <strong>TailwindCSS</strong>
+   </a>
+   <a className='desktop-link' href="https://jquery.com/" target='_blank'>
+    <strong>JQuery</strong>
+   </a>
+   <a className='desktop-link' href="https://sass-lang.com/" target='_blank'>
+    <strong>SASS</strong>
+   </a>
+   <a className='desktop-link' href="https://www.figma.com/" target='_blank'>
+    <strong>Figma</strong>
+   </a>
+   <a className='desktop-link' href="https://vitest.dev/" target='_blank'>
+    <strong>Vitest</strong>
+   </a>
+   <a className='desktop-link' href="https://nextjs.org/" target='_blank'>
+    <strong>Next.js</strong>
+   </a>
+   <a className='desktop-link' href="https://vuejs.org/" target='_blank'>
+    <strong>Vue.js</strong>
+   </a>
+   <a className='desktop-link' href="https://www.11ty.dev/" target='_blank'>
+    <strong>11ty</strong>
+   </a>
   </>
  )
 }

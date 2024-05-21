@@ -53,16 +53,10 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
    <div className='hero'>
     <img src="https://images.unsplash.com/photo-1715987587174-b8be6a743337?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width={200} height={200} />
     <div className='content'>
-     <h1>Adry Dev</h1>
-     <h3>Web Developer</h3>
-     <SocialMedia />
-    </div>
-   </div>
-   <div className='who-am-i'>
-    <div className='skill_contact'>
-     <div className='skills'>
-      <h3>Skills</h3>
-      <Skills screen={isMobile ? 'mobile' : 'desktop'} />
+     <div className='i-am'>
+      <h1>Adry Dev</h1>
+      <h3>Web Developer</h3>
+      <SocialMedia />
      </div>
      <div className="contact">
       <a href="tel:+1(829)2758177" target='_blank'>
@@ -74,22 +68,30 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
        <strong>adrydevmateo@gmail.com</strong>
       </a>
       <a href="https://maps.app.goo.gl/817z41r7FcQRJ43p9" target='_blank'>
-       <BookUserIcon width={42} />
+       <BookUserIcon width={innerWidth > 1050 ? 30 : 40} />
        <strong>Las Cayenas 8, San Isidro, Santo Domingo Este, Dominican Republic</strong>
       </a>
      </div>
     </div>
+   </div>
+   <div className='who-am-i'>
+    <div className='skills'>
+     <h3>Skills</h3>
+     <Skills screen={isMobile ? 'mobile' : 'desktop'} />
+    </div>
     <div className='about'>
      <h3>About</h3>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse in iure fuga magni praesentium, eius recusandae. Eveniet doloremque quaerat autem provident blanditiis obcaecati sint adipisci nulla ducimus, dolorum eum corporis.</p>
+     <p>
+      I'm a passionate front-end developer with a year of experience building user-friendly and responsive web interfaces. I'm proficient in the core technologies of HTML, CSS, and JavaScript, and I'm eager to expand my knowledge in frameworks and libraries.
+     </p>
     </div>
    </div>
    <div className='experience'>
     <h3>Experience</h3>
     <ul>
      <li>
-      <h4>Front End Developer | ATDEV | Dominican Republic | May 9, 2024</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis aspernatur officia illo. Voluptatem, enim explicabo. Ut, fugiat nemo </p>
+      <h4>Front End Developer | ATDEV | Dominican Republic | May 9, 2024 - TODAY</h4>
+      <p>In this company, I've had the opportunity to dive into the world of web development, working on projects that range from building user interfaces to implementing interactive features.</p>
      </li>
     </ul>
    </div>

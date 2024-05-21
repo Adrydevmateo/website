@@ -1,5 +1,6 @@
 .skills-component {
  display: flex;
+ flex-wrap: wrap;
  gap: .8em;
  margin-bottom: 1em;
 }
