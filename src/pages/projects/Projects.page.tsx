@@ -16,7 +16,7 @@ export default function ProjectsPage() {
  const projects: Array<TProject> = [
   {
    id: 0,
-   title: 'E-commerce Website',
+   title: 'E-commerce Website Website',
    description: 'Shopping',
    technologies: [{ name: 'react', link: 'https://react.dev/' }],
    year: '2024',
@@ -26,6 +26,42 @@ export default function ProjectsPage() {
   {
    id: 1,
    title: 'E-commerce Website',
+   description: 'Shopping',
+   technologies: [{ name: 'react', link: 'https://react.dev/' }],
+   year: '2024',
+   githubLink: '',
+   websiteLink: ''
+  },
+  {
+   id: 2,
+   title: 'E-commerce Website E-commerce Website E-commerce Website',
+   description: 'Shopping',
+   technologies: [{ name: 'react', link: 'https://react.dev/' }],
+   year: '2024',
+   githubLink: '',
+   websiteLink: ''
+  },
+  {
+   id: 3,
+   title: 'E-commerce Website Website',
+   description: 'Shopping',
+   technologies: [{ name: 'react', link: 'https://react.dev/' }],
+   year: '2024',
+   githubLink: '',
+   websiteLink: ''
+  },
+  {
+   id: 4,
+   title: 'E-commerce Website',
+   description: 'Shopping',
+   technologies: [{ name: 'react', link: 'https://react.dev/' }],
+   year: '2024',
+   githubLink: '',
+   websiteLink: ''
+  },
+  {
+   id: 5,
+   title: 'E-commerce Website E-commerce Website E-commerce Website',
    description: 'Shopping',
    technologies: [{ name: 'react', link: 'https://react.dev/' }],
    year: '2024',

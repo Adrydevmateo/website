@@ -4,6 +4,7 @@
 
 #projects-page ul {
  display: flex;
+ flex-wrap: wrap;
  gap: 2em;
  list-style: none;
  padding: 0;
@@ -12,6 +13,7 @@
 #projects-page ul li {
  border: 1px solid var(--flat-blue);
  padding: 1em;
+ width: 100%;
 }
 
 #projects-page ul li .row-1 {}
@@ -57,3 +59,23 @@
 #projects-page ul li .row-4 a {}
 
 #projects-page ul li .row-4 a strong {}
+
+@media screen and (min-width: 600px) {
+ #projects-page {
+  padding: 2em;
+ }
+}
+
+@media screen and (min-width: 900px) {
+ #projects-page ul li {
+  max-width: 15em;
+  width: auto;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ #projects-page ul li {
+  max-width: 18em;
+  width: auto;
+ }
+}
