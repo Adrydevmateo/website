@@ -4,7 +4,7 @@ import BaseLayout from '@layouts/Base.layout'
 import { Download as DownloadIcon, Phone as PhoneIcon, Mail as MailIcon, BookUser as BookUserIcon } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import SocialMedia from '@components/social-media/Social-Media.component'
-
+import ProgrammerGIF from '@/assets/giphy.gif'
 
 export default function HomePage() {
 
@@ -36,13 +36,16 @@ function Mobile({ isMobile }: { isMobile: boolean }) {
  return (
   <div className='mobile'>
    <div className='hero'>
-    <img src="https://images.unsplash.com/photo-1715987587174-b8be6a743337?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width={240} height={240} />
+    <img src={ProgrammerGIF} alt="programmer gif" width={240} />
     <h2>Adry Dev</h2>
     <h3>Web Developer</h3>
    </div>
    <Skills align='center' justify='center' screen={isMobile ? 'mobile' : 'desktop'} />
    <SocialMedia justify='center' />
-   <button className='primary-button' type='button'><DownloadIcon width={16} height={16} /> Download CV</button>
+   <a className='primary-button' href="https://docs.google.com/document/d/1GBvFVamPJFWJIbwOosse8WP1bewsvV2FmsdhoGYxjdg/edit?usp=sharing" target='_blank'>
+    <DownloadIcon width={18} height={18} />
+    Download CV
+   </a>
   </div>
  )
 }
@@ -51,7 +54,7 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
  return (
   <div className='desktop'>
    <div className='hero'>
-    <img src="https://images.unsplash.com/photo-1715987587174-b8be6a743337?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width={200} height={200} />
+    <img src={ProgrammerGIF} alt="programmer gif" width={240} />
     <div className='content'>
      <div className='i-am'>
       <h1>Adry Dev</h1>

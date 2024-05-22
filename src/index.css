@@ -74,19 +74,23 @@ a:hover {
  display: flex;
  margin: auto;
  align-items: center;
+ justify-content: center;
  gap: .8em;
  padding: .4em 1em;
  font-weight: 600;
  opacity: .8;
- transition: opacity .2s ease;
  cursor: pointer;
- color: var(--color-secondary);
- border: none;
- background-color: blue;
+ border: 1px solid transparent;
+ color: var(--desert-storm);
+ background-color: var(--blue-zodiac);
+ transition: opacity .2s ease, color .2s ease, background-color .2s ease, border-color .2s ease;
 }
 
 .primary-button:hover {
  opacity: 1;
+ color: var(--blue-zodiac);
+ background-color: var(--desert-storm);
+ border-color: var(--blue-zodiac);
 }
 
 .direction-row {
