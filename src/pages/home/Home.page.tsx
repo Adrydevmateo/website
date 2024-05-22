@@ -42,7 +42,7 @@ function Mobile({ isMobile }: { isMobile: boolean }) {
    </div>
    <Skills align='center' justify='center' screen={isMobile ? 'mobile' : 'desktop'} />
    <SocialMedia justify='center' />
-   <a className='primary-button' href="https://docs.google.com/document/d/1GBvFVamPJFWJIbwOosse8WP1bewsvV2FmsdhoGYxjdg/edit?usp=sharing" target='_blank'>
+   <a className='primary-button' href="/Resume.pdf" target='_blank'>
     <DownloadIcon width={18} height={18} />
     Download CV
    </a>
@@ -60,6 +60,10 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
       <h1>Adry Dev</h1>
       <h3>Web Developer</h3>
       <SocialMedia />
+      <a className='primary-button' href="/Resume.pdf" target='_blank'>
+       <DownloadIcon width={18} height={18} />
+       Download
+      </a>
      </div>
      <div className="contact">
       <a href="tel:+1(829)2758177" target='_blank'>
@@ -99,7 +103,7 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
      </li>
      <li>
       <h4>Front End Developer | ATDEV | Dominican Republic | august 2023 - TODAY</h4>
-      <p>In this company, I've had the opportunity to dive into the world of web development, working on projects that range from building user interfaces to implementing interactive features.</p>
+      <p>The past year has been a whirlwind of learning and development as a front-end developer. I've gone from building basic user interfaces to implementing interactive features that elevate the user experience. Collaborating with the team on diverse projects has expanded my skillset and exposed me to the cutting edge of web development.</p>
      </li>
     </ul>
    </div>

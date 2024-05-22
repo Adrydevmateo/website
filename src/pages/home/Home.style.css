@@ -54,7 +54,11 @@
 
 .desktop .hero .content .i-am h3 {
  word-spacing: -.4em;
- margin-bottom: 1.8em;
+}
+
+.desktop .hero .content .i-am .primary-button {
+ margin-left: -.1em;
+ width: 8.2em;
 }
 
 .desktop .hero .content .contact {
