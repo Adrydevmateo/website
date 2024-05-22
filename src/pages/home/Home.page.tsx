@@ -90,7 +90,12 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
     <h3>Experience</h3>
     <ul>
      <li>
-      <h4>Front End Developer | ATDEV | Dominican Republic | May 9, 2024 - TODAY</h4>
+      <h4>Web Developer Intern | ATDEV | Dominican Republic | May 9, 2024 - July 9, 2024</h4>
+      <p>
+       I was trained by a tech lead, a senior full-stack developer, and was working and learning with a UI/UX and QA who guided me through the process of becoming a web developer capable enough to do the job and be admitted by the company.</p>
+     </li>
+     <li>
+      <h4>Front End Developer | ATDEV | Dominican Republic | May 20, 2024 - TODAY</h4>
       <p>In this company, I've had the opportunity to dive into the world of web development, working on projects that range from building user interfaces to implementing interactive features.</p>
      </li>
     </ul>
@@ -98,4 +103,3 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
   </div>
  )
 }
-

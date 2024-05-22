@@ -29,6 +29,34 @@ export default function ProjectsPage() {
    githubLink: 'https://github.com/Adrydevmateo/notes-app',
    websiteLink: 'https://notes-adrydev.netlify.app/'
   },
+  {
+   id: 1,
+   title: 'Match the Pokemon',
+   description: 'Test your memory by matching the pokemons',
+   technologies: [
+    { name: 'React', link: 'https://react.dev/' },
+    { name: 'TypeScript', link: 'https://www.typescriptlang.org/' },
+    { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+    { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' }
+   ],
+   year: '2024',
+   githubLink: 'https://github.com/Adrydevmateo/match-the-pokemon',
+   websiteLink: 'https://adrydev-match-the-pokemon.netlify.app/'
+  },
+  {
+   id: 2,
+   title: 'To-Do',
+   description: 'Write down your tasks for today',
+   technologies: [
+    { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+    { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' }
+   ],
+   year: '2024',
+   githubLink: 'https://github.com/Adrydevmateo/todo-prototype',
+   websiteLink: 'https://polite-pegasus-93eaea.netlify.app/'
+  }
  ]
 
  return (
