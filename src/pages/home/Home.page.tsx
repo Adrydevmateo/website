@@ -98,7 +98,7 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
        I was trained by a tech lead, a senior full-stack developer, and was working and learning with a UI/UX and QA who guided me through the process of becoming a web developer capable enough to do the job and be admitted by the company.</p>
      </li>
      <li>
-      <h4>Front End Developer | ATDEV | Dominican Republic | July 2023 - TODAY</h4>
+      <h4>Front End Developer | ATDEV | Dominican Republic | august 2023 - TODAY</h4>
       <p>In this company, I've had the opportunity to dive into the world of web development, working on projects that range from building user interfaces to implementing interactive features.</p>
      </li>
     </ul>
