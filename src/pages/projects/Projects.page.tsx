@@ -56,6 +56,18 @@ export default function ProjectsPage() {
    year: '2024',
    githubLink: 'https://github.com/Adrydevmateo/todo-prototype',
    websiteLink: 'https://polite-pegasus-93eaea.netlify.app/'
+  },
+  {
+   id: 3,
+   title: 'Social Links Profile',
+   description: 'Frontend mentor challenge',
+   technologies: [
+    { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+    { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+   ],
+   year: '2024',
+   githubLink: 'https://github.com/Adrydevmateo/social-links-profile-main',
+   websiteLink: 'https://teal-daffodil-4ce7dd.netlify.app/'
   }
  ]
 
