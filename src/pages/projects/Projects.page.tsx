@@ -68,6 +68,19 @@ export default function ProjectsPage() {
    year: '2024',
    githubLink: 'https://github.com/Adrydevmateo/social-links-profile-main',
    websiteLink: 'https://teal-daffodil-4ce7dd.netlify.app/'
+  },
+  {
+   id: 4,
+   title: 'Newsletter Sign-Up Form',
+   description: 'Frontend mentor challenge',
+   technologies: [
+    { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+    { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+   ],
+   year: '2024',
+   githubLink: 'https://github.com/Adrydevmateo/newsletter-sign-up-with-success-message-main',
+   websiteLink: 'https://preeminent-croissant-1805fd.netlify.app/'
   }
  ]
 
