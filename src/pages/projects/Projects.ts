@@ -68,5 +68,17 @@ export const projects: Array<TProject> = [
   year: '2024',
   githubLink: 'https://github.com/Adrydevmateo/newsletter-sign-up-with-success-message-main',
   websiteLink: 'https://adrydev-newsletter-sign-up-form.netlify.app/'
+ },
+ {
+  id: 5,
+  title: 'Product Preview',
+  description: 'Frontend mentor challenge',
+  technologies: [
+   { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+   { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+  ],
+  year: '2024',
+  githubLink: 'https://github.com/Adrydevmateo/product-preview-card-component-main',
+  websiteLink: 'https://adrydev-product-preview.netlify.app/'
  }
 ]
