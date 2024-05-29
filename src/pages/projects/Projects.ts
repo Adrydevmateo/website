@@ -104,5 +104,18 @@ export const projects: Array<TProject> = [
   year: '2024',
   githubLink: 'https://github.com/Adrydevmateo/nft-preview-card-component-main',
   websiteLink: 'https://adrydev-nft-preview-card.netlify.app/'
+ },
+ {
+  id: 8,
+  title: 'Advice Generator',
+  description: 'Frontend mentor challenge',
+  technologies: [
+   { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+   { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+   { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+  ],
+  year: '2024',
+  githubLink: 'https://github.com/Adrydevmateo/advice-generator-app-main',
+  websiteLink: 'https://adrydev-advice-generator.netlify.app/'
  }
 ]
