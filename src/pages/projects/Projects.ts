@@ -117,5 +117,17 @@ export const projects: Array<TProject> = [
   year: '2024',
   githubLink: 'https://github.com/Adrydevmateo/advice-generator-app-main',
   websiteLink: 'https://adrydev-advice-generator.netlify.app/'
+ },
+ {
+  id: 9,
+  title: 'Recipe Page',
+  description: 'Frontend mentor challenge',
+  technologies: [
+   { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+   { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+  ],
+  year: '2024',
+  githubLink: 'https://github.com/Adrydevmateo/recipe-page',
+  websiteLink: 'https://adrydev-recipe-page.netlify.app/'
  }
 ]
