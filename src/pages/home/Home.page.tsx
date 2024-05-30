@@ -44,7 +44,7 @@ function Mobile({ isMobile }: { isMobile: boolean }) {
    <SocialMedia justify='center' />
    <a className='primary-button' href="/Resume.pdf" target='_blank'>
     <DownloadIcon width={18} height={18} />
-    Download CV
+    Resume
    </a>
   </div>
  )
@@ -62,7 +62,7 @@ function Desktop({ isMobile }: { isMobile: boolean }) {
       <SocialMedia />
       <a className='primary-button' href="/Resume.pdf" target='_blank'>
        <DownloadIcon width={18} height={18} />
-       Download
+       Resume
       </a>
      </div>
      <div className="contact">
