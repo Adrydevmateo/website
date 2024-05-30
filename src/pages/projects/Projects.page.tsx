@@ -35,7 +35,7 @@ export default function ProjectsPage() {
      {shuffledProjects.map(m => (
       <li key={m.id}>
        <div className="img-box">
-        <img src={m.img} alt="project" width={100} height={100} />
+        <img src={m.img} alt="project" width={100} height={100} loading='lazy' />
        </div>
        <div className="content">
         <div className="row-1">
