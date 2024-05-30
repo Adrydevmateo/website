@@ -44,7 +44,7 @@ export default function ProjectsPage() {
         <div className="row-2">
          {m.technologies.map((t, i) => (
           <a key={i} href={t.link} target='_blank'>
-           <strong>{t.name}</strong>
+           <strong>{t.name}</strong><span>|</span>
           </a>
          ))}
         </div>
