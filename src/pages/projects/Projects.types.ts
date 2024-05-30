@@ -1,5 +1,5 @@
 export type TProject = {
- id: number,
+ id: string,
  title: string,
  description: string,
  year: string,
