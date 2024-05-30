@@ -1,9 +1,8 @@
 export type TProject = {
  id: string,
  title: string,
- description: string,
- year: string,
  technologies: Array<{ name: string, link: string }>,
+ img: string,
  githubLink: string,
  websiteLink: string
 }
