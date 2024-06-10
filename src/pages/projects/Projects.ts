@@ -3,6 +3,21 @@ import { TProject } from "./Projects.types";
 export const projects: Array<TProject> = [
  {
   id: crypto.randomUUID(),
+  title: 'TO-DO',
+  description: 'Frontend mentor challenge',
+  technologies: [
+   { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+   { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+   { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+   { name: 'React', link: 'https://react.dev/' },
+   { name: 'TypeScript', link: 'https://www.typescriptlang.org/' },
+  ],
+  year: '2024',
+  githubLink: 'https://github.com/Adrydevmateo/todo-app-react',
+  websiteLink: 'https://adrydev-todo-react.netlify.app/'
+ },
+ {
+  id: crypto.randomUUID(),
   title: 'Column Preview',
   technologies: [
    { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
