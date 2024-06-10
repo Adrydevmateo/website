@@ -4,7 +4,6 @@ export const projects: Array<TProject> = [
  {
   id: crypto.randomUUID(),
   title: 'TO-DO',
-  description: 'Frontend mentor challenge',
   technologies: [
    { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
    { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
@@ -12,7 +11,7 @@ export const projects: Array<TProject> = [
    { name: 'React', link: 'https://react.dev/' },
    { name: 'TypeScript', link: 'https://www.typescriptlang.org/' },
   ],
-  year: '2024',
+  img: 'https://raw.githubusercontent.com/Adrydevmateo/todo-app-react/main/src/assets/design/desktop-preview.jpg',
   githubLink: 'https://github.com/Adrydevmateo/todo-app-react',
   websiteLink: 'https://adrydev-todo-react.netlify.app/'
  },
