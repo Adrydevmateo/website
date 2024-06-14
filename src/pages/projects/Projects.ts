@@ -17,6 +17,18 @@ export const projects: Array<TProject> = [
  },
  {
   id: crypto.randomUUID(),
+  title: 'Contact Form',
+  technologies: [
+   { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+   { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+   { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+  ],
+  img: 'https://raw.githubusercontent.com/Adrydevmateo/contact-form-main/main/design/desktop-preview.jpg',
+  githubLink: 'https://github.com/Adrydevmateo/contact-form-main',
+  websiteLink: 'https://adrydev-contact-form.netlify.app/'
+ },
+ {
+  id: crypto.randomUUID(),
   title: 'Column Preview',
   technologies: [
    { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
