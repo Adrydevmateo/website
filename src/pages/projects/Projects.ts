@@ -3,6 +3,18 @@ import { TProject } from "./Projects.types";
 export const projects: Array<TProject> = [
  {
   id: crypto.randomUUID(),
+  title: 'Age Calculator',
+  technologies: [
+   { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+   { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+   { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' }
+  ],
+  img: 'https://raw.githubusercontent.com/Adrydevmateo/age-calculator-app-main/main/design/desktop-preview.jpg',
+  githubLink: 'https://github.com/Adrydevmateo/age-calculator-app-main',
+  websiteLink: 'https://adrydev-age-calculator.netlify.app/'
+ },
+ {
+  id: crypto.randomUUID(),
   title: 'TO-DO',
   technologies: [
    { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
